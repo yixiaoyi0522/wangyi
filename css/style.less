@@ -1,0 +1,397 @@
+@charset "UTF-8";
+
+#fullPage-nav{
+  font-size: 14px;
+  _display: none;
+
+  li{
+//    border: 1px solid red;
+    width: 90px;
+    height: 20px;
+//    float: left;
+    a{
+      color: #000000;
+      width: 20px;
+      height: 20px;
+      float: right;
+      margin-left: 2px;
+      background: url("../images/dot.png") 5px 5px no-repeat;
+    }
+    .active{
+      //  设置选中激活状态的样式
+      background-position: 0 bottom;
+    }
+  }
+  //隐藏自带的导航属性
+  span{
+    display: none;
+  }
+
+
+}
+.fullPage-tooltip{
+  color: #000000;
+  font-family: 微软雅黑;
+  line-height: 20px;
+}
+
+
+.section1{
+  position: relative;
+  overflow: hidden;
+  .bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .bg12{
+    position: absolute;
+    bottom: -292px;
+    width: 100%;
+    height: 392px;
+    background: url("../images/bg12.png") 50% 0 no-repeat;
+    opacity: 0;
+    transition: all 1.7s;   //时间长动画慢
+  }
+  .bg13{
+    position: absolute;
+    bottom: -377px;
+    width: 100%;
+    height: 377px;
+    background: url("../images/bg13.png") 50% 0 no-repeat;
+    opacity: 0;
+    transition: all 1s;   //时间长动画慢
+  }
+
+  .hgroup{
+    position: absolute;
+    bottom: -176px;
+    width: 554px;
+    height: 176px;
+    left: 50%;
+    margin-left: -277px;
+    background: url("../images/slogan.png") no-repeat;
+    opacity: 0;
+    transition: all 1s;
+  }
+  
+  .mail{
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    width: 375px;
+    height: 26px;
+    margin-left: -187px;
+    background-image: url(../images/logo.png);
+    transition: all 1s;
+    float: left;
+    text-indent: -9999px;   //隐藏文字
+
+    .mail-163{
+      float: left;
+      width: 107px;
+    }
+    .mail-126{
+      float: left;
+      width: 108px;
+      margin-left: 23px;
+    }
+    .mail-yeah{
+      float: right;
+      width: 115px;
+    }
+  }
+}
+
+.active{
+
+
+  .bg12{
+    bottom: 0;
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+  .bg13{
+    bottom: -170px;
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+  .hgroup{
+    bottom: 300px;
+    opacity: 1;
+    transform: scale(1.1);
+//    transition-delay: 0.7s;
+  }
+  .mail{
+    top: 65px;
+    transition-delay: 0.7s;
+  }
+
+
+}
+
+.section2{
+  position: relative;
+  overflow: hidden;
+  .bg2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .bg23{
+    position: absolute;
+    bottom: -325px;
+    width: 819px;
+    height: 325px;
+    left: 50%;
+    margin-left: -410px;
+    background: url("../images/bg23.png") no-repeat;
+    transition: all 1s;
+    opacity: 1;
+  }
+  .hgroup2{
+    position: absolute;
+    top: 100px;;
+    width: 100%;
+    height: 100px;
+    left: 35%;
+    opacity: 0;
+    transition: all 1s;
+    img{
+      width: 512px;
+      height: 45px;
+    }
+    h1{
+      font-size: 30px;
+      color: #748a9e;
+    }
+    span{
+      position: absolute;
+      top: -50px;
+      display: block;
+      color: #727f8c;
+      width: 510px;
+      font-size: 16px;
+      line-height: 1.9;
+      font-weight: bold;
+      margin-top: 30px;
+      transition: all 1s;
+    }
+  }
+
+}
+.active{
+  //第二屏
+  .bg23{
+    bottom: -50px;
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+  .hgroup2{
+    top: 100px;
+    opacity: 1;
+    transition-delay: 0.7s;
+    span{
+      top: 160px;
+      opacity: 1;
+      transition-delay: 0.7s;
+    }
+  }
+}
+
+.section3{
+  position: relative;
+  overflow: hidden;
+  .bg3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  .bg31{
+    position: absolute;
+    bottom: -500px;
+    right: 100px;
+    opacity: 0;
+    width: 892px;
+    height: 472px;
+    background: url("../images/bg31.png") 50% 0 no-repeat;
+    transition: all 1s;
+  }
+  .bg32{
+    position: absolute;
+    bottom: 300px;
+    right: 100px;
+    opacity: 0;
+    width: 322px;
+    height: 143px;
+    background: url("../images/bg32.png") 50% 0 no-repeat;
+    transition: all 1s;
+  }
+  .bg33{
+    position: absolute;
+    right: 400px;
+    bottom: -400px;
+    width: 441px;
+    height: 380px;
+    opacity: 0;
+    background: url("../images/bg33.png") no-repeat;
+    transition: all 1s;
+  }
+  .hgroup3{
+    position: absolute;
+    top: 144px;
+    left: 520px;
+    opacity: 0;
+    transition: all 1s;
+    h1{
+      color: #c9c87d;
+      font-size: 30px;
+    }
+
+  }
+  .p3{
+    position: absolute;
+    color: #fffde1;
+    width: 430px;
+    left: 30px;
+    top: 378px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.9;
+    transition: all 1s;
+  }
+}
+.active{
+  .bg31 {
+    bottom: -125px;
+    right: 100px;
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+  .bg32 {
+    bottom: -300px;
+    right: 100px;
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+  .bg33{
+    bottom: -200px;
+    right: 250px;
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+  .hgroup3{
+    top: 144px;
+    left: 520px;
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+  .p3{
+    top: 400px;
+    left: 260px;
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+}
+
+
+.section4{
+  position: relative;
+  overflow: hidden;
+  .bg6{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 1;
+  }
+  .hgroup4{
+    position: absolute;
+    top: 157px;
+    left: 450px;
+    height: 233px;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .bg41{
+    //  闹钟
+    position: absolute;
+    left: 100px;
+    top: -400px;
+    background: url("../images/bg61.png") no-repeat;
+    width: 1101px;
+    height: 545px;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .bg42{
+    //  左侧图
+    position: absolute;
+    left: -200px;
+    top: 440px;
+    background: url("../images/bg62.png") no-repeat;
+    width: 597px;
+    height: 284px;
+    transition: all 1s;
+
+  }
+  .p6{
+    position: absolute;
+    right: -200px;
+    top: 450px;
+    color: #5c7970;
+    width: 500px;
+    font-size: 18px;
+    line-height: 1.9;
+    transition: all 1s;
+  }
+}
+.active{
+  .hgroup4{
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+  .bg41{
+    left: 100px;
+    top: -30px;
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+  .bg42{
+    left: 170px;
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+  .p6{
+    right: 270px;
+    opacity: 1;
+    transition-delay: 0.7s;
+  }
+}
+
+
+
+
+
+
+
+
+

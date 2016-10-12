@@ -1,0 +1,351 @@
+@charset "UTF-8";
+#fullPage-nav {
+  font-size: 14px;
+  _display: none;
+}
+#fullPage-nav li {
+  width: 90px;
+  height: 20px;
+}
+#fullPage-nav li a {
+  color: #000000;
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-left: 2px;
+  background: url("../images/dot.png") 5px 5px no-repeat;
+}
+#fullPage-nav li .active {
+  background-position: 0 bottom;
+}
+#fullPage-nav span {
+  display: none;
+}
+.fullPage-tooltip {
+  color: #000000;
+  font-family: 微软雅黑;
+  line-height: 20px;
+}
+.section1 {
+  position: relative;
+  overflow: hidden;
+}
+.section1 .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.section1 .bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section1 .bg12 {
+  position: absolute;
+  bottom: -292px;
+  width: 100%;
+  height: 392px;
+  background: url("../images/bg12.png") 50% 0 no-repeat;
+  opacity: 0;
+  transition: all 1.7s;
+}
+.section1 .bg13 {
+  position: absolute;
+  bottom: -377px;
+  width: 100%;
+  height: 377px;
+  background: url("../images/bg13.png") 50% 0 no-repeat;
+  opacity: 0;
+  transition: all 1s;
+}
+.section1 .hgroup {
+  position: absolute;
+  bottom: -176px;
+  width: 554px;
+  height: 176px;
+  left: 50%;
+  margin-left: -277px;
+  background: url("../images/slogan.png") no-repeat;
+  opacity: 0;
+  transition: all 1s;
+}
+.section1 .mail {
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  width: 375px;
+  height: 26px;
+  margin-left: -187px;
+  background-image: url(../images/logo.png);
+  transition: all 1s;
+  float: left;
+  text-indent: -9999px;
+}
+.section1 .mail .mail-163 {
+  float: left;
+  width: 107px;
+}
+.section1 .mail .mail-126 {
+  float: left;
+  width: 108px;
+  margin-left: 23px;
+}
+.section1 .mail .mail-yeah {
+  float: right;
+  width: 115px;
+}
+.active .bg12 {
+  bottom: 0;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.active .bg13 {
+  bottom: -170px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.active .hgroup {
+  bottom: 300px;
+  opacity: 1;
+  transform: scale(1.1);
+}
+.active .mail {
+  top: 65px;
+  transition-delay: 0.7s;
+}
+.section2 {
+  position: relative;
+  overflow: hidden;
+}
+.section2 .bg2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.section2 .bg2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section2 .bg23 {
+  position: absolute;
+  bottom: -325px;
+  width: 819px;
+  height: 325px;
+  left: 50%;
+  margin-left: -410px;
+  background: url("../images/bg23.png") no-repeat;
+  transition: all 1s;
+  opacity: 1;
+}
+.section2 .hgroup2 {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100px;
+  left: 35%;
+  opacity: 0;
+  transition: all 1s;
+}
+.section2 .hgroup2 img {
+  width: 512px;
+  height: 45px;
+}
+.section2 .hgroup2 h1 {
+  font-size: 30px;
+  color: #748a9e;
+}
+.section2 .hgroup2 span {
+  position: absolute;
+  top: -50px;
+  display: block;
+  color: #727f8c;
+  width: 510px;
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: bold;
+  margin-top: 30px;
+  transition: all 1s;
+}
+.active .bg23 {
+  bottom: -50px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.active .hgroup2 {
+  top: 100px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.active .hgroup2 span {
+  top: 160px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.section3 {
+  position: relative;
+  overflow: hidden;
+}
+.section3 .bg3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.section3 .bg31 {
+  position: absolute;
+  bottom: -500px;
+  right: 100px;
+  opacity: 0;
+  width: 892px;
+  height: 472px;
+  background: url("../images/bg31.png") 50% 0 no-repeat;
+  transition: all 1s;
+}
+.section3 .bg32 {
+  position: absolute;
+  bottom: 300px;
+  right: 100px;
+  opacity: 0;
+  width: 322px;
+  height: 143px;
+  background: url("../images/bg32.png") 50% 0 no-repeat;
+  transition: all 1s;
+}
+.section3 .bg33 {
+  position: absolute;
+  right: 400px;
+  bottom: -400px;
+  width: 441px;
+  height: 380px;
+  opacity: 0;
+  background: url("../images/bg33.png") no-repeat;
+  transition: all 1s;
+}
+.section3 .hgroup3 {
+  position: absolute;
+  top: 144px;
+  left: 520px;
+  opacity: 0;
+  transition: all 1s;
+}
+.section3 .hgroup3 h1 {
+  color: #c9c87d;
+  font-size: 30px;
+}
+.section3 .p3 {
+  position: absolute;
+  color: #fffde1;
+  width: 430px;
+  left: 30px;
+  top: 378px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.9;
+  transition: all 1s;
+}
+.active .bg31 {
+  bottom: -125px;
+  right: 100px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.active .bg32 {
+  bottom: -300px;
+  right: 100px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.active .bg33 {
+  bottom: -200px;
+  right: 250px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.active .hgroup3 {
+  top: 144px;
+  left: 520px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.active .p3 {
+  top: 400px;
+  left: 260px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.section4 {
+  position: relative;
+  overflow: hidden;
+}
+.section4 .bg6 {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+.section4 .hgroup4 {
+  position: absolute;
+  top: 157px;
+  left: 450px;
+  height: 233px;
+  opacity: 0;
+  transition: all 1s;
+}
+.section4 .bg41 {
+  position: absolute;
+  left: 100px;
+  top: -400px;
+  background: url("../images/bg61.png") no-repeat;
+  width: 1101px;
+  height: 545px;
+  opacity: 0;
+  transition: all 1s;
+}
+.section4 .bg42 {
+  position: absolute;
+  left: -200px;
+  top: 440px;
+  background: url("../images/bg62.png") no-repeat;
+  width: 597px;
+  height: 284px;
+  transition: all 1s;
+}
+.section4 .p6 {
+  position: absolute;
+  right: -200px;
+  top: 450px;
+  color: #5c7970;
+  width: 500px;
+  font-size: 18px;
+  line-height: 1.9;
+  transition: all 1s;
+}
+.active .hgroup4 {
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.active .bg41 {
+  left: 100px;
+  top: -30px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.active .bg42 {
+  left: 170px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+.active .p6 {
+  right: 270px;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
